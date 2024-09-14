@@ -12,6 +12,11 @@
   line-height: calc(11.72 / 10);
 }
 
+.footer-link:hover,
+.footer-link:active {
+  color: var(--font-color-accent);
+}
+
 @media screen and (min-width: 1440px) {
   .footer-container {
     flex-direction: row-reverse;
