@@ -1,6 +1,24 @@
-/* .rules {
-  padding: 40px 0;
-} */
+.rules {
+  padding: 40px 0 59px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .rules {
+    background-image: url('../img/mob/decor-1x-mob.png');
+    background-size: contain;
+    background-position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .rules {
+      background-image: url('../img/mob/decor-2x-mob.png');
+    }
+  }
+
+  .rules-list-item {
+    width: 248px;
+  }
+}
 
 .rules-title {
   margin: 0 auto;
@@ -9,4 +27,166 @@
   font-size: 28px;
   line-height: calc(44.98 / 28);
   text-align: center;
+  color: var(--font-color-secondary);
+}
+
+.rules-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.rules-list-item {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: var(--bg-third);
+}
+
+.rules-list-item-span {
+  font-family: var(--font-accent);
+  color: var(--font-color-accent);
+  text-shadow: 1px 1px 0 var(--font-color-secondary),
+    -1px -1px 0 var(--font-color-secondary),
+    1px -1px 0 var(--font-color-secondary),
+    -1px 1px 0 var(--font-color-secondary);
+}
+
+.span-1 {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  font-size: 34px;
+  line-height: 1.17;
+}
+
+.span-2 {
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  font-size: 40px;
+  line-height: 1.17;
+}
+
+.span-3 {
+  position: absolute;
+  top: 4px;
+  left: -10px;
+  font-size: 30px;
+  line-height: 1.17;
+}
+
+.span-4 {
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  font-size: 33px;
+  line-height: 1.17;
+}
+
+.span-5 {
+  position: absolute;
+  top: 2px;
+  left: -10px;
+  font-size: 40px;
+  line-height: 1.17;
+}
+
+.span-6 {
+  position: absolute;
+  top: 62px;
+  left: 45%;
+  font-size: 32px;
+  line-height: 1.17;
+}
+
+.rules-list-item-text {
+  font-size: 16px;
+  line-height: calc(18.75 / 16);
+}
+
+@media screen and (min-width: 1440px) {
+  .rules {
+    padding: 120px 0 160px 0;
+  }
+
+  .rules {
+    background-image: url('../img/desktop/decor-1x-desktop.png');
+    background-size: contain;
+    background-position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .rules {
+      background-image: url('../img/desktop/decor-2x-desktop.png');
+    }
+  }
+
+  .rules-title {
+    margin-bottom: 48px;
+    font-size: 60px;
+    line-height: calc(96.39 / 60);
+  }
+
+  .rules-list {
+    row-gap: 18px;
+  }
+
+  .rules-list-item {
+    padding: 10px 20px;
+  }
+
+  .span-1 {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-size: 34px;
+    line-height: 1.17;
+  }
+
+  .span-2 {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    font-size: 40px;
+    line-height: 1.17;
+  }
+
+  .span-3 {
+    position: absolute;
+    top: 6px;
+    left: -12px;
+    font-size: 30px;
+    line-height: 1.17;
+  }
+
+  .span-4 {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 33px;
+    line-height: 1.17;
+  }
+
+  .span-5 {
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    font-size: 40px;
+    line-height: 1.17;
+  }
+
+  .span-6 {
+    position: absolute;
+    top: 35px;
+    left: 45%;
+    font-size: 32px;
+    line-height: 1.17;
+  }
+
+  .rules-list-item-text {
+    font-size: 24px;
+    line-height: calc(28.13 / 24);
+  }
 }
