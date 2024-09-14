@@ -4,7 +4,7 @@
 
 @import './header.css';
 /* @import './hero.css'; */
-/* @import './benefites.css'; */
+@import './benefites.css';
 @import './about.css';
 /* @import './rules.css'; */
 /* @import './gallery.css'; */
@@ -20,6 +20,8 @@
   --font-color-secondary: #f1f1f1;
   --font-color-accent: #f35900;
 
+  --border-color: #939393;
+
   --bg-primary: rgb(0, 191, 255);
   --bg-secondary: #a6eb04;
   --bg-third: #f1f1f1;
@@ -27,8 +29,8 @@
   --bg-mob-menu: #e4e4e41a;
   --bg-gradient: linear-gradient(
     0deg,
-    var(--bg-primary) 100%,
+    var(--bg-primary),
     var(--bg-third) 60%,
-    var(var(--bg-primary) 100%)
+    var(--bg-primary)
   );
 }
