@@ -3,7 +3,7 @@
 @import './common/container.css';
 
 @import './header.css';
-/* @import './hero.css'; */
+@import './hero.css';
 @import './attantion.css';
 @import './benefites.css';
 @import './about.css';
