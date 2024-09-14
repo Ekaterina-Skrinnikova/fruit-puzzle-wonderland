@@ -2,6 +2,20 @@
   padding: 40px 0;
 }
 
+@media screen and (max-width: 375px) {
+  .advantages {
+    background-image: url('../img/mob/wheel-1x-mob.png');
+    background-size: contain;
+    background-repeat: repeat;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .advantages {
+      background-image: url('../img/mob/wheel-2x-mob.png');
+    }
+  }
+}
+
 .advantages-container {
   text-align: center;
 }
@@ -76,6 +90,19 @@
 @media screen and (min-width: 1440px) {
   .advantages {
     padding: 120.36px 0;
+  }
+
+  .advantages {
+    background-image: url('../img/desktop/wheel-1x-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -325px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .advantages {
+      background-image: url('../img/desktop/wheel-2x-desktop.png');
+    }
   }
 
   .advantages-container-1 {
