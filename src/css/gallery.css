@@ -12,6 +12,14 @@
   background-color: #fff;
   margin: 0 auto;
   position: relative;
+  /* background-image: url('../img/desktop/gallery-background\ 1x.png');
+  background-repeat: no-repeat;
+  background-size: crop; */
+}
+
+.gallery-wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 .gallery-text {
   display: flex;
@@ -97,15 +105,26 @@
   flex-direction: column !important;
   gap: 12px !important;
   bottom: 0 !important;
+  background-color: transparent !important;
+  opacity: 1;
+  /* width: 0% !important; */
 }
 .swiper-pagination-bullet {
   width: 14px !important;
   height: 14px !important;
   background-image: url('/img/mob/point-gray-1x-mob.png') !important;
   background-size: cover !important;
+  background-color: #fff;
+  opacity: 1 !important;
 }
-.swiper-pagination-bullet-active {
+/* .swiper-pagination-bullet-active {
   background-image: url('/img/mob/point-orange-1x-mob.png') !important;
+} */
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-image: url('/img/mob/point-orange-1x-mob.png') !important; /* Активная точка */
+  background-size: cover !important;
+  opacity: 1 !important;
+  background-color: #fff;
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -120,6 +139,9 @@
     align-items: center; */
     /* background-color: #fff; */
     /* margin: 0 auto; */
+  }
+  .gallery-wrapper {
+    width: 1440px;
   }
   .gallery-content {
     padding: 0;
