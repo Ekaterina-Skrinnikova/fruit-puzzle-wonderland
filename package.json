@@ -1,14 +1,15 @@
 {
-  "name": "vanilla-vite-template",
+  "name": "fruit-puzzle-wonderland",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-vite-template/",
+    "build": "vite build --base=/fruit-puzzle-wonderland/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "deploy": "netlify deploy -p",
+    "preview:build": "vite build && vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
