@@ -24,6 +24,7 @@
   margin: 0 auto;
   margin-bottom: 16px;
   font-family: var(--font-secondary);
+  font-weight: 400;
   font-size: 28px;
   line-height: calc(44.98 / 28);
   text-align: center;

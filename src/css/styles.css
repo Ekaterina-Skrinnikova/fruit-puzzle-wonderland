@@ -35,4 +35,10 @@
     var(--bg-third) 60%,
     var(--bg-primary)
   );
+  --bg-gradient-2: linear-gradient(
+    135deg,
+    var(--bg-primary),
+    var(--bg-third) 80%,
+    var(--bg-primary)
+  );
 }

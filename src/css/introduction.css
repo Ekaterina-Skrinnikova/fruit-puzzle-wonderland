@@ -1,5 +1,7 @@
 .introduction {
   padding-bottom: 60px;
+  background: var(--bg-gradient-2);
+  background-position: center;
 }
 
 .introduction-container {
