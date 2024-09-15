@@ -3,7 +3,7 @@ import 'swiper/swiper-bundle.css';
 
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  spaceBetween: 20,
+  // spaceBetween: 20,
   loop: true,
   navigation: {
     nextEl: '.gallery-arrow-right',
