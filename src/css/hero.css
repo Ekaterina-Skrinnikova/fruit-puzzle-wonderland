@@ -112,8 +112,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 80px 190px 0px 80px;
-    /* align-items: flex-start;
-    align-self: stretch; */
     text-align: left;
     align-items: center;
     row-gap: 12px;
