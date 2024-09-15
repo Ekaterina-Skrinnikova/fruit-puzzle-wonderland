@@ -7,9 +7,26 @@
       out—download Fruit Wonderland today and start your journey through a
       fruity paradise!
     </p>
-    <img class="hero-img" src="./img/mob/main-1x-mob.png" alt="photo of game" />
+    <picture>
+      <source
+        srcset="./img/mob/main-1x-mob.png 1x, ./img/mob/main-2x-mob.png 2x"
+        media="(max-width: 375px)"
+      />
+      <source
+        srcset="
+          ./img/desktop/main-1x-desktop.png 1x,
+          ./img/desktop/main-2x-desktop.png 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <img
+        class="hero-img"
+        src="./img/mob/main-1x-mob.png"
+        alt="photo of game"
+      />
+    </picture>
     <a class="hero-link" href="https://play.google.com/store">
-      <img src="../img/mob/badge-1x-mob.png" />
+      <img src="./img/mob/badge-1x-mob.png" />
     </a>
   </div>
 </section>
