@@ -1,5 +1,7 @@
 .hero {
   padding: 40px 0;
+  /* position: relative; */
+  overflow: hidden;
 }
 
 .hero-container {
@@ -7,6 +9,10 @@
   flex-direction: column;
   align-items: center;
   row-gap: 18px;
+  /* position: relative; */
+}
+.hero-main {
+  z-index: 800;
 }
 
 .hero-title {
@@ -39,7 +45,8 @@
 }
 
 .hero-img {
-  margin-top: 16px;
+  /* margin-top: 16px; */
+  z-index: 900;
 }
 
 .hero-link {
@@ -48,4 +55,131 @@
   height: 47px;
   background-color: transparent;
   border: transparent;
+}
+
+.cloud {
+  position: absolute;
+  background-size: contain;
+  z-index: 1;
+}
+.cloud-1 {
+  width: 173px;
+  height: 172px;
+  top: 274px;
+  left: 182px;
+  gap: 0px;
+  opacity: 0px;
+}
+.cloud-2 {
+  width: 172px;
+  height: 172px;
+  top: 492px;
+  left: -22px;
+  gap: 0px;
+  opacity: 0px;
+}
+.cloud-3 {
+  width: 105px;
+  height: 105px;
+  top: 471px;
+  left: 8px;
+  gap: 0px;
+  opacity: 60%;
+}
+.cloud-4 {
+  width: 97px;
+  height: 96px;
+  top: 178px;
+  left: 136px;
+  gap: 0px;
+  opacity: 80%;
+}
+.cloud-5 {
+  width: 189px;
+  height: 189px;
+  top: 62px;
+  left: -21px;
+  gap: 0px;
+  opacity: 0px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 0;
+  }
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 190px 0px 80px;
+    /* align-items: flex-start;
+    align-self: stretch; */
+    text-align: left;
+    align-items: center;
+    row-gap: 12px;
+  }
+  .hero-main {
+    /* margin-top: 95px; */
+    flex: 1;
+    order: 1;
+  }
+  .hero-title {
+    width: 737px;
+    font-size: 98px;
+  }
+  .hero-text {
+    font-size: 24px;
+    width: 737px;
+  }
+  .hero-img {
+    width: 321px;
+    height: 630px;
+    order: 2;
+    margin-top: 0;
+  }
+  .hero-link img {
+    width: 203px;
+    height: 60px;
+    margin-top: 250px;
+  }
+  .cloud-1 {
+    width: 400px;
+    height: 400px;
+    top: 60px;
+    left: 1040px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .cloud-2 {
+    width: 401px;
+    height: 400px;
+    top: 538px;
+    left: 667px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .cloud-3 {
+    width: 244px;
+    height: 244px;
+    top: 552px;
+    left: 506px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .cloud-4 {
+    width: 226px;
+    height: 225px;
+    top: 210px;
+    left: 619px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .cloud-5 {
+    width: 439px;
+    height: 439px;
+    top: 128px;
+    left: 10px;
+    gap: 0px;
+    opacity: 0px;
+  }
 }
