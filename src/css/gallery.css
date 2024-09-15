@@ -1,3 +1,5 @@
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 .gallery {
   width: 100%;
   max-width: 375px;
@@ -42,10 +44,15 @@
   padding: 10px 75px;
   position: relative;
 }
+.swiper-slide {
+  position: static !important;
+}
 
 .swiper-container {
   width: 320px;
+  overflow: hidden;
 }
+
 .swiper-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -77,6 +84,11 @@
   align-items: center;
   align-self: stretch;
 }
+.gallery-arrow-left,
+.gallery-arrow-right {
+  width: 22px;
+  height: 30px;
+}
 .swiper-pagination {
   position: absolute !important;
   left: 47px !important;
@@ -95,80 +107,115 @@
 .swiper-pagination-bullet-active {
   background-image: url('/img/mob/point-orange-1x-mob.png') !important;
 }
-/* Медиа-запросы для планшетов и десктопов */
-@media (min-width: 768px) {
-  .gallery {
-    max-width: 768px;
-    padding: 30px 0px;
-  }
-  .gallery-content {
-    padding: 20px 75px;
-  }
-  .swiper-container {
-    width: 375px;
-  }
-  .gallery-item-img {
-    width: 200px;
-  }
-  .gallery-item-img img {
-    width: 200px;
-  }
-  .gallery-arrows {
-    width: 200px;
-  }
-  .swiper-pagination {
-    left: 47px !important;
-    transform: translateY(-200%) !important;
-  }
-}
 
-/* Медиа-запрос для десктопов (1440px) */
-@media (min-width: 1440px) {
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media screen and (min-width: 1440px) {
   .gallery {
+    width: 100%;
     max-width: 1440px;
-    padding: 40px 0px;
-    justify-content: center;
-  }
-  .gallery-text {
-    align-items: center;
-    text-align: center;
+    padding: 40px 393px;
+    /* justify-content: center;
+    align-items: center; */
+    /* background-color: #fff; */
+    /* margin: 0 auto; */
   }
   .gallery-content {
     padding: 0;
+  }
+  .gallery-text {
+    /* align-items: center;
+    text-align: center; */
+    margin-bottom: 36px;
+  }
+  .gallery-title {
+    /* color: var(--orabge, #f35900);
+    font-family: 'Shadows Into Light'; */
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+  .gallery-decription {
+    /* color: var(--black, #1b1b1b); */
+    font-size: 24px;
+  }
+  /* .gallery-wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-  }
+    gap: 120px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  } */
   .swiper-container {
-    width: 654px;
+    /* display: flex; */
+    width: 100%;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    max-width: 654px;
+    /* flex: 1; */
+    position: relative;
   }
+  /* .swiper-slide {
+    margin: 0 auto;
+    width: 645px;
+    position: relative;
+  } */
   .gallery-item-img {
-    width: 356px;
-    height: 654px;
-    margin-bottom: 20px;
+    width: 291px;
+    height: 518px;
+    /* border-radius: 12px;
+    border: 2px solid var(--orabge, #f35900);
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 28px;
   }
   .gallery-item-img img {
-    width: 356px;
-    height: 654px;
+    /* object-fit: cover;
+    border-radius: 12px; */
+    width: 291px;
   }
   .gallery-arrows {
-    width: 356px;
-    margin: 0 auto;
+    width: 654px;
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center;
+    align-self: stretch; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: auto;
   }
+  .gallery-arrow-left,
+  .gallery-arrow-right {
+    width: 36.616px;
+    height: 49.942px;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  /* .swiper-slide .gallery-arrow-left,
+  .swiper-slide .gallery-arrow-right {
+    align-self: center;
+  } */
   .swiper-pagination {
-    position: static !important;
     display: flex !important;
-    justify-content: center !important;
-    margin-top: 20px !important;
-    gap: 12px !important;
+    flex-direction: row !important;
+    gap: 16px !important;
+    margin: 0 auto !important;
+    left: 41% !important;
   }
   .swiper-pagination-bullet {
-    width: 20px !important;
-    height: 20px !important;
-    background-image: url('/img/desktop/point-gray-1x-desktop.png') !important;
-    background-size: cover !important;
-  }
-  .swiper-pagination-bullet-active {
-    background-image: url('/img/desktop/point-orange-1x-desktop.png') !important;
+    width: 20.96px !important;
+    height: 20.357px !important;
   }
 }
