@@ -11,6 +11,7 @@
 @import './gallery.css';
 @import './advantages.css';
 @import './introduction.css';
+@import './privacy.css';
 @import './footer.css';
 
 :root {
@@ -36,9 +37,9 @@
     var(--bg-primary)
   );
   --bg-gradient-2: linear-gradient(
-    135deg,
-    var(--bg-primary),
-    var(--bg-third) 80%,
-    var(--bg-primary)
+    165deg,
+    rgba(46, 185, 252, 0.6) 0%,
+    rgba(241, 241, 241, 0.48) 46.5%,
+    rgba(46, 185, 252, 0.6) 100%
   );
 }
