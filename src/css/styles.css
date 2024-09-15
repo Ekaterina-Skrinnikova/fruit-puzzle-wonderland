@@ -3,12 +3,13 @@
 @import './common/container.css';
 
 @import './header.css';
-/* @import './hero.css'; */
-/* @import './benefites.css'; */
+@import './hero.css';
+@import './attantion.css';
+@import './benefites.css';
 @import './about.css';
-/* @import './rules.css'; */
+@import './rules.css';
 @import './gallery.css';
-/* @import './advantages.css'; */
+@import './advantages.css';
 @import './introduction.css';
 @import './footer.css';
 
@@ -20,15 +21,24 @@
   --font-color-secondary: #f1f1f1;
   --font-color-accent: #f35900;
 
+  --border-color: #939393;
+
   --bg-primary: rgb(0, 191, 255);
   --bg-secondary: #a6eb04;
   --bg-third: #f1f1f1;
   --bg-header: #d9d9d94d;
   --bg-mob-menu: #e4e4e41a;
+  --bg-accent: #f9db02;
   --bg-gradient: linear-gradient(
     0deg,
-    var(--bg-primary) 100%,
+    var(--bg-primary),
     var(--bg-third) 60%,
-    var(var(--bg-primary) 100%)
+    var(--bg-primary)
+  );
+  --bg-gradient-2: linear-gradient(
+    135deg,
+    var(--bg-primary),
+    var(--bg-third) 80%,
+    var(--bg-primary)
   );
 }

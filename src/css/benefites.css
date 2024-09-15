@@ -1,0 +1,111 @@
+.benefites {
+  padding: 40px 0;
+  text-align: center;
+
+  background: var(--bg-gradient);
+}
+
+.benefites-title {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: calc(44.98 / 28);
+  text-align: center;
+}
+
+.benefites-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.benefites-wrapper-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 126px;
+  height: 108px;
+
+  background-image: url('../img/desktop/board-1x-desktop.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position-x: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .benefites-wrapper-item {
+    background-image: url('../img/desktop/board-2x-desktop.png');
+  }
+}
+
+.benefites-wrapper-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(18.75 / 16);
+  color: var(--font-color-secondary);
+}
+
+.benefites-wrapper-item-number {
+  font-family: var(--font-accent);
+  font-size: 32px;
+  line-height: calc(37.32 / 32);
+  color: var(--font-color-secondary);
+  text-shadow: 1px 1px 0 var(--border-color), -1px -1px 0 var(--border-color),
+    1px -1px 0 var(--border-color), -1px 1px 0 var(--border-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .benefites {
+    padding: 120px 0;
+  }
+
+  .benefites-title {
+    margin-bottom: 28px;
+    font-family: var(--font-secondary);
+    font-size: 60px;
+    line-height: calc(96.39 / 60);
+  }
+
+  .benefites-wrapper {
+    margin: 0 auto;
+    width: 830px;
+    height: 418px;
+    gap: 24px;
+  }
+
+  .benefites-wrapper-item {
+    width: 403px;
+    height: 197px;
+
+    background-image: url('../img/desktop/board-1x-desktop.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position-x: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .benefites-wrapper-item {
+      background-image: url('../img/desktop/board-2x-desktop.png');
+    }
+  }
+
+  .benefites-wrapper-item-text {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: calc(32.81 / 28);
+    color: var(--font-color-secondary);
+  }
+
+  .benefites-wrapper-item-number {
+    font-family: var(--font-accent);
+    font-size: 88px;
+    line-height: calc(102.64 / 88);
+    color: var(--font-color-secondary);
+    text-shadow: 1px 1px 0 var(--border-color), -1px -1px 0 var(--border-color),
+      1px -1px 0 var(--border-color), -1px 1px 0 var(--border-color);
+  }
+}

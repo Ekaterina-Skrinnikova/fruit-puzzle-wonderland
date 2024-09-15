@@ -1,5 +1,9 @@
 .introduction {
   padding-bottom: 60px;
+  background-image: var(--bg-gradient-2);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position-y: bottom;
 }
 
 .introduction-container {

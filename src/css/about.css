@@ -13,6 +13,7 @@
   margin-bottom: 16px;
   width: 56px;
   font-family: var(--font-secondary);
+  font-weight: 400;
   font-size: 28px;
   line-height: calc(44.98 / 28);
   text-align: center;
@@ -20,6 +21,21 @@
 
 .about-text {
   text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    background-image: url('../img/mob/tree-1x-mob.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .about {
+      background-image: url('../img/mob/tree-2x-mob.png');
+    }
+  }
 }
 
 .about-text:last-child {
@@ -35,6 +51,19 @@
 @media screen and (min-width: 1440px) {
   .about {
     padding: 40px 0;
+  }
+
+  .about {
+    background-image: url('../img/desktop/tree-1x-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .about {
+      background-image: url('../img/desktop/tree-2x-desktop.png');
+    }
   }
 
   .about-container {

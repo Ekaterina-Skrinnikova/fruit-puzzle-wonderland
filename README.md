@@ -1,2 +1,1 @@
-# Vanilla-vite-template
-
+# fruit-puzzle-wonderland
