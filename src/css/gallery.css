@@ -1,18 +1,6 @@
-/* .gallery {
-  width: 100%;
-  max-width: 320px;
-  padding: 20px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18px;
-  margin: 0 auto;
-  position: relative;
-  background-color: white;
-} */
 .gallery {
   width: 100%;
-  max-width: 320px;
+  /* max-width: 375px; */
   padding: 20px 0px;
   display: flex;
   flex-direction: column;
@@ -107,43 +95,18 @@
 .swiper-pagination-bullet-active {
   background-image: url('/img/mob/point-orange-1x-mob.png') !important;
 }
-/* Медиа-запросы для планшетов и десктопов */
-@media (min-width: 768px) {
-  .gallery {
-    max-width: 768px;
-    padding: 30px 0px;
-  }
-  .gallery-content {
-    padding: 20px 75px;
-  }
-  .swiper-container {
-    width: 375px;
-  }
-  .gallery-item-img {
-    width: 200px;
-  }
-  .gallery-item-img img {
-    width: 200px;
-  }
-  .gallery-arrows {
-    width: 200px;
-  }
-  .swiper-pagination {
-    left: 47px !important;
-    transform: translateY(-200%) !important;
-  }
-}
 
 /* Медиа-запрос для десктопов (1440px) */
 @media (min-width: 1440px) {
+  /* .container {
+    padding: 0 0 !important;
+  } */
   .gallery {
-    max-width: 1440px;
-    padding: 40px 0px;
-    justify-content: center;
+    /* padding: 40px 360px 0 !important; */
+    /* justify-content: center; */
   }
   .gallery-text {
-    align-items: center;
-    text-align: center;
+    padding: 40px 360px 0 !important;
   }
   .gallery-content {
     padding: 0;
