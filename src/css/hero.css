@@ -56,16 +56,7 @@
   transform: translateX(-100w);
   animation: transform 2s ease-out, opacity 2s ease-out;
 }
-/* @keyframes moveClouds {
-  from {
-    transform: translateX(-100vw);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-} */
+
 .cloud-1 {
   width: 173px;
   height: 172px;
