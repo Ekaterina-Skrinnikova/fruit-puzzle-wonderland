@@ -1,14 +1,12 @@
 .header {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; */
   position: relative;
   padding-top: 51px;
   padding-bottom: 4px;
-  background-color: var(--bg-header);
+  /* background-color: var(--bg-header); */
   z-index: 999;
   transition: all 0.3s ease;
+  background: rgba(217, 217, 217, 0.3);
+  backdrop-filter: blur(60px);
 }
 
 .fixed {
@@ -18,18 +16,9 @@
   width: 100%;
 }
 
-/* body {
-  padding-top: 101px;
-} */
-
 main {
   padding-top: 0;
   transition: padding-top 0.3s ease;
-}
-
-#main-content {
-  height: calc(100vh - 101px);
-  overflow-y: auto;
 }
 
 .mobile-menu {
