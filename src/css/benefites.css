@@ -1,7 +1,6 @@
 .benefites {
   padding: 40px 0;
   text-align: center;
-
   background: var(--bg-gradient);
 }
 
@@ -16,6 +15,7 @@
 }
 
 .benefites-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -24,23 +24,11 @@
 
 .benefites-wrapper-item {
   position: relative;
-  z-index: 5;
 }
 
-.benefites-wrapper-item-text {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: calc(18.75 / 16);
-  color: var(--font-color-secondary);
-}
-
-.benefites-wrapper-item-number {
-  font-family: var(--font-accent);
-  font-size: 32px;
-  line-height: calc(37.32 / 32);
-  color: var(--font-color-secondary);
-  text-shadow: 1px 1px 0 var(--border-color), -1px -1px 0 var(--border-color),
-    1px -1px 0 var(--border-color), -1px 1px 0 var(--border-color);
+.board {
+  position: relative;
+  z-index: 4;
 }
 
 .stars,
@@ -58,25 +46,15 @@
     align-items: center;
     width: 126px;
     height: 108px;
-
-    background-image: url('../img/mob/board-1x-mob.png');
-    background-size: cover;
-    background-repeat: repeat-y;
-    background-position-x: center;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .benefites-wrapper-item {
-      background-image: url('../img/mob/board-2x-mob.png');
-    }
-  }
   .stars {
     z-index: 10;
     top: -75px;
     left: 20px;
   }
   .yellowdisk-1 {
-    z-index: 0;
+    z-index: 3;
     top: -30px;
     right: 10px;
   }
@@ -113,35 +91,26 @@
     gap: 24px;
   }
 
-  .benefites-wrapper-item {
-    width: 403px;
-    height: 197px;
-
-    background-image: url('../img/desktop/board-1x-desktop.png');
-    background-size: cover;
-    background-repeat: repeat-y;
-    background-position-x: center;
+  .stars {
+    z-index: 10;
+    top: 140px;
+    left: -95px;
+  }
+  .yellowdisk-1 {
+    z-index: 3;
+    top: -80px;
+    right: 35px;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .benefites-wrapper-item {
-      background-image: url('../img/desktop/board-2x-desktop.png');
-    }
+  .yellowdisk-2 {
+    z-index: 0;
+    bottom: -80px;
+    left: 40px;
   }
 
-  .benefites-wrapper-item-text {
-    font-size: 28px;
-    font-weight: 500;
-    line-height: calc(32.81 / 28);
-    color: var(--font-color-secondary);
-  }
-
-  .benefites-wrapper-item-number {
-    font-family: var(--font-accent);
-    font-size: 88px;
-    line-height: calc(102.64 / 88);
-    color: var(--font-color-secondary);
-    text-shadow: 1px 1px 0 var(--border-color), -1px -1px 0 var(--border-color),
-      1px -1px 0 var(--border-color), -1px 1px 0 var(--border-color);
+  .pineapple {
+    z-index: 10;
+    bottom: -40px;
+    right: -125px;
   }
 }
