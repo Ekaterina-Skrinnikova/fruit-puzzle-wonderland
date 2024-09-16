@@ -33,9 +33,7 @@
   font-family: var(--font-secondary);
   font-size: 16px;
 }
-p:last-child {
-  margin-top: 18px;
-}
+
 @media screen and (min-width: 1440px) {
   .privacy-container {
     padding: 0 80px;
@@ -49,10 +47,10 @@ p:last-child {
   }
   .privacy-text {
     font-size: 36px;
-    margin-top: 40px;
   }
-  p:last-child {
-    margin-top: 40px;
+
+  .privacy-text {
+    margin-top: 40px !important;
   }
   .privacy-text-span {
     font-size: 36px;
