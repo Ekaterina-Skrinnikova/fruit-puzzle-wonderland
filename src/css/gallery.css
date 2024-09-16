@@ -1,8 +1,4 @@
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-
 .gallery {
-  width: 100%;
-  max-width: 375px;
   padding: 20px 0px;
   display: flex;
   flex-direction: column;
@@ -12,16 +8,16 @@
   background-color: #fff;
   margin: 0 auto;
   position: relative;
-  /* background-image: url('../img/desktop/gallery-background\ 1x.png');
-  background-repeat: no-repeat;
-  background-size: crop; */
 }
 
 .gallery-wrapper {
   width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 .gallery-text {
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   padding: 0px 24px;
   flex-direction: column;
@@ -50,25 +46,23 @@
 
 .gallery-content {
   padding: 10px 75px;
-  position: relative;
 }
 .swiper-slide {
   position: static !important;
 }
 
 .swiper-container {
-  width: 320px;
   overflow: hidden;
 }
 
 .swiper-wrapper {
   display: flex;
   flex-wrap: nowrap;
+  width: 0 !important;
 }
 
 .gallery-item-img {
   display: flex;
-  width: 170px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -107,54 +101,85 @@
   bottom: 0 !important;
   background-color: transparent !important;
   opacity: 1;
+  width: 10%;
 }
 .swiper-pagination-bullet {
+  background: none !important;
   width: 14px !important;
   height: 14px !important;
   background-image: url('/img/mob/point-gray-1x-mob.png') !important;
   background-size: cover !important;
-  background-color: #fff;
+  background-repeat: no-repeat !important ;
+  background-position: center !important;
   opacity: 1 !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
-/* .swiper-pagination-bullet-active {
-  background-image: url('/img/mob/point-orange-1x-mob.png') !important;
-} */
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-image: url('/img/mob/point-orange-1x-mob.png') !important; /* Активная точка */
   background-size: cover !important;
   opacity: 1 !important;
-  background-color: #fff;
 }
-
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 0 !important;
+}
+@media screen and (max-width: 375px) {
+  .gallery {
+    background-image: url('../img/mob/gallery-background\ 1x.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .gallery {
+      background-image: url('../img/mob/gallery-background\ 2x.png');
+    }
+  }
+}
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 @media screen and (min-width: 1440px) {
   .gallery {
     width: 100%;
-    max-width: 1440px;
-    padding: 40px 393px;
+    gap: 0;
+    padding: 40px 393px 60px 393px;
+    background-image: url('../img/desktop/gallery-background 1x.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .gallery {
+      background-image: url('../img/desktop/gallery-background 2x.png');
+    }
+  }
+
   .gallery-wrapper {
-    width: 1440px;
+    width: 654px;
   }
   .gallery-content {
     padding: 0;
   }
   .gallery-text {
+    width: 654px;
     margin-bottom: 36px;
+    padding: 0;
   }
   .gallery-title {
     font-size: 60px;
-    margin-bottom: 28px;
   }
   .gallery-decription {
     font-size: 24px;
+  }
+  p:last-child {
+    margin-top: 0;
   }
   .swiper-container {
     width: 100%;
     max-width: 654px;
     position: relative;
+  }
+  .swiper-slide {
+    width: 291px;
   }
 
   .gallery-item-img {
@@ -185,10 +210,14 @@
     flex-direction: row !important;
     gap: 16px !important;
     margin: 0 auto !important;
-    left: 41% !important;
+    left: 30% !important;
+    top: 100% !important;
   }
   .swiper-pagination-bullet {
     width: 20.96px !important;
     height: 20.357px !important;
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 500px !important;
   }
 }
