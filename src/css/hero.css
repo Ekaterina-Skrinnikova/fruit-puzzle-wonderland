@@ -1,6 +1,5 @@
 .hero {
   padding: 40px 0;
-  /* position: relative; */
   overflow: hidden;
 }
 
@@ -9,14 +8,12 @@
   flex-direction: column;
   align-items: center;
   row-gap: 18px;
-  /* position: relative; */
 }
 .hero-main {
   z-index: 800;
 }
 
 .hero-title {
-  /* position: relative; */
   font-family: var(--font-accent);
   font-size: 28px;
   line-height: calc(33.18 / 28);
@@ -77,6 +74,7 @@
   left: -22px;
   gap: 0px;
   opacity: 0px;
+  z-index: 10;
 }
 .cloud-3 {
   width: 105px;
@@ -105,41 +103,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
-    padding: 0;
-  }
-  .hero-container {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 80px 190px 0px 80px;
-    text-align: left;
-    align-items: center;
-    row-gap: 12px;
-  }
-  .hero-main {
-    /* margin-top: 95px; */
-    flex: 1;
-    order: 1;
-  }
-  .hero-title {
-    width: 737px;
-    font-size: 98px;
-  }
-  .hero-text {
-    font-size: 24px;
-    width: 737px;
-  }
-  .hero-img {
-    width: 321px;
-    height: 630px;
-    order: 2;
-    margin-top: 0;
-  }
-  .hero-link img {
-    width: 203px;
-    height: 60px;
-    margin-top: 250px;
-  }
   .cloud-1 {
     width: 400px;
     height: 400px;
