@@ -69,12 +69,13 @@
   z-index: 1;
 }
 .cloud-1 {
-  width: 173px;
-  height: 172px;
+  width: 130px;
+  height: 130px;
   top: 274px;
   left: 182px;
   gap: 0px;
   opacity: 0px;
+  z-index: 1;
 }
 .cloud-2 {
   width: 172px;
