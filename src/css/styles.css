@@ -31,10 +31,10 @@
   --bg-mob-menu: #e4e4e41a;
   --bg-accent: #f9db02;
   --bg-gradient: linear-gradient(
-    0deg,
-    var(--bg-primary),
-    var(--bg-third) 60%,
-    var(--bg-primary)
+    180deg,
+    var(--bg-primary) 0%,
+    rgba(255, 255, 255, 0.6) 55%,
+    var(--bg-primary) 100%
   );
   --bg-gradient-2: linear-gradient(
     165deg,

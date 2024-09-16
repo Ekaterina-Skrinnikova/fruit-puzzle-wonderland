@@ -27,8 +27,8 @@
     right: 0;
     height: 100vh;
     width: 80%;
-    background-color: #e4e4e41a;
-
+    background-color: var(--bg-mob-menu);
+    backdrop-filter: blur(60px);
     z-index: 999;
   }
 
