@@ -23,23 +23,8 @@
 }
 
 .benefites-wrapper-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 126px;
-  height: 108px;
-
-  background-image: url('../img/desktop/board-1x-desktop.png');
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position-x: center;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .benefites-wrapper-item {
-    background-image: url('../img/desktop/board-2x-desktop.png');
-  }
+  position: relative;
+  z-index: 5;
 }
 
 .benefites-wrapper-item-text {
@@ -56,6 +41,57 @@
   color: var(--font-color-secondary);
   text-shadow: 1px 1px 0 var(--border-color), -1px -1px 0 var(--border-color),
     1px -1px 0 var(--border-color), -1px 1px 0 var(--border-color);
+}
+
+.stars,
+.yellowdisk-1,
+.yellowdisk-2,
+.pineapple {
+  position: absolute;
+}
+
+@media screen and (max-width: 375px) {
+  .benefites-wrapper-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+    height: 108px;
+
+    background-image: url('../img/mob/board-1x-mob.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position-x: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .benefites-wrapper-item {
+      background-image: url('../img/mob/board-2x-mob.png');
+    }
+  }
+  .stars {
+    z-index: 10;
+    top: -75px;
+    left: 20px;
+  }
+  .yellowdisk-1 {
+    z-index: 0;
+    top: -30px;
+    right: 10px;
+  }
+
+  .yellowdisk-2 {
+    z-index: 0;
+    bottom: -20px;
+    left: 30px;
+  }
+
+  .pineapple {
+    z-index: 10;
+    bottom: -30px;
+    right: -10px;
+  }
 }
 
 @media screen and (min-width: 1440px) {

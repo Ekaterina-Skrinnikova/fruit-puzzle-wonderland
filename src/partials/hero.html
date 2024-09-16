@@ -1,17 +1,49 @@
 <section class="hero" id="hero">
   <div class="container hero-container">
-    <h1 class="hero-title">FRUIT WONDERLAND</h1>
-    <p class="hero-text">
-      Enter the vibrant world of Fruit Wonderland and embark on a juicy
-      adventure packed with exciting puzzles and colorful fruits! Don’t miss
-      out—download Fruit Wonderland today and start your journey through a
-      fruity paradise!
-    </p>
-    <img class="hero-img" src="./img/mob/main-1x-mob.png" alt="photo of game" />
-    <a class="hero-link" href="https://play.google.com/store">
-      <img src="../img/mob/badge-1x-mob.png" />
-    </a>
-    <picture class="cloud cloud-1">
+    <div class="hero-container-mob">
+      <h1 class="hero-title">FRUIT WONDERLAND</h1>
+      <p class="hero-text">
+        Enter the vibrant world of Fruit Wonderland and embark on a juicy
+        adventure packed with exciting puzzles and colorful fruits! Don’t miss
+        out—download Fruit Wonderland today and start your journey through a
+        fruity paradise!
+      </p>
+
+      <img
+        class="hero-img-mob"
+        srcset="./img/mob/main-1x-mob.png 1x, ./img/mob/main-2x-mob.png 2x"
+        src="./img/mob/main-1x-mob.png"
+        alt="photo of game"
+      />
+
+      <a class="hero-link" href="https://play.google.com/store">
+        <picture>
+          <source
+            srcset="./img/mob/badge-1x-mob.png, ./img/mob/badge-2x-mob.png 2x"
+            media="(max-width: 375px)"
+          />
+          <source
+            srcset="
+              ./img/desktop/badge-1x-desktop.png 1x,
+              ./img/desktop/badge-2x-desktop.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <img src="./img/mob/badge-1x-mob.png" alt="icon google play" />
+        </picture>
+      </a>
+    </div>
+
+    <img
+      class="hero-img-desktop"
+      srcset="
+        ./img/desktop/main-1x-desktop.png 1x,
+        ./img/desktop/main-2x-desktop.png 2x
+      "
+      src="./img/mob/main-1x-mob.png"
+      alt="photo of game"
+    />
+   <picture class="cloud cloud-1">
       <source
         srcset="
           ./img/desktop/cloud-2-1x-desktop.png 1x,
@@ -54,7 +86,8 @@
           ./img/desktop/cloud-4-2x-desktop.png 2x
         "
       />
-      <img src="../img/desktop/cloud-4-1x-desktop.png " alt="cloud-1" />
+      <img src="./img/desktop/cloud-4-1x-desktop.png " alt="cloud-1" />
     </picture>
+
   </div>
 </section>
