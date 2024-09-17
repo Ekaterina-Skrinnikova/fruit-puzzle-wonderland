@@ -19,7 +19,7 @@ document.querySelectorAll('.header-nav-link').forEach(item => {
             2 ===
           1
         ) {
-          targetSection.style.paddingTop = `${headerHeight}px`;
+          const targetPosition = targetSection.offsetTop - headerHeight;
         }
       }
     });

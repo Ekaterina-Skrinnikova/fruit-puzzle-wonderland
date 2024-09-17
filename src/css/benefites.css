@@ -24,11 +24,56 @@
 
 .benefites-wrapper-item {
   position: relative;
+  width: 126px;
+  height: 108px;
+  color: var(--font-color-secondary);
 }
 
 .board {
   position: relative;
   z-index: 4;
+}
+
+.benefites-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.benefit-1 {
+  padding: 26px 36px;
+}
+
+.benefit-2 {
+  padding: 26px 10px;
+}
+
+.benefit-3 {
+  padding: 26px 30.5px;
+}
+
+.benefit-4 {
+  padding: 35px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.benefites-wrapper-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(18.75 / 16);
+}
+
+.benefites-wrapper-number {
+  font-family: var(--font-accent);
+  font-size: 32px;
+  line-height: calc(37.32 / 32);
+  text-shadow: 1px 1px 0 var(--border-color), -2px 2px 0 var(--border-color),
+    1px -1px 0 var(--border-color), -1px 1px 0 var(--border-color);
 }
 
 .stars,
@@ -39,15 +84,6 @@
 }
 
 @media screen and (max-width: 375px) {
-  .benefites-wrapper-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 126px;
-    height: 108px;
-  }
-
   .stars {
     z-index: 10;
     top: -75px;
@@ -89,6 +125,52 @@
     width: 830px;
     height: 418px;
     gap: 24px;
+  }
+
+  .benefites-wrapper-item {
+    position: relative;
+    width: 403px;
+    height: 197px;
+    color: var(--font-color-secondary);
+  }
+
+  .benefites-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .benefites-wrapper-item-text {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: calc(32.81 / 28);
+  }
+
+  .benefites-wrapper-number {
+    font-size: 88px;
+    line-height: calc(102.64 / 88);
+  }
+
+  .benefit-1 {
+    padding: 30px 127px;
+  }
+
+  .benefit-2 {
+    padding: 30px 56px;
+  }
+
+  .benefit-3 {
+    padding: 30px 113px;
+  }
+
+  .benefit-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 44px 95px;
   }
 
   .stars {
