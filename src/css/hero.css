@@ -14,15 +14,53 @@
   z-index: 800;
 }
 
+.hero-title-wrap {
+  position: relative;
+  z-index: 15;
+}
+
 .hero-title {
   font-family: var(--font-accent);
   font-size: 28px;
   line-height: calc(33.18 / 28);
   color: var(--bg-secondary);
-  text-shadow: 1px 1px 0 var(--font-color-primary),
-    -1px -1px 0 var(--font-color-primary), 1px -1px 0 var(--font-color-primary),
-    -1px 1px 0 var(--font-color-primary);
+  /* text-shadow: 1px 1px 0 var(--font-color-primary),
+    -1px 1px 0 var(--font-color-primary), 1px -1px 0 var(--font-color-primary),
+    -1px 1px 0 var(--font-color-primary); */
+
+  /* background-color: #00000096;
+  color: rgba(0, 0, 0, 0);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 1px 6px 1px var(--bg-secondary), 0px 8px 0px #000000c3; */
+
+  /* text-shadow: 2px 2px 0px #000000, 2px 2px 0px #000000, 2px -2px 0px #000000,
+    -2px 2px 0px #000000; */
+
+  background: linear-gradient(0deg, var(--bg-secondary), #0000005e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 2px 2px 0px, -2px -2px 0px rgba(0, 0, 0, 0.472),
+    2px -2px 0px #00000028, -2px 2px 0px #00000028;
+
+  /* box-shadow: 0px 4px 4px 0px #00000040 inset; */
+
   z-index: 15;
+}
+
+.hero-title-wrap {
+  position: relative;
+}
+
+.hero-title-two {
+  position: absolute;
+  top: 10px;
+  text-shadow: unset;
+  color: #0565fe;
+  text-shadow: -1px -5px 5px var(--font-color-primary),
+    1px -1px 0 var(--font-color-primary), -1px 1px 0 var(--font-color-primary);
 }
 
 .hero-text {
