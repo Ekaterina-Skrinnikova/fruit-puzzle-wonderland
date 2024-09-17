@@ -125,13 +125,14 @@
 }
 @media screen and (max-width: 375px) {
   .gallery {
-    background-image: url('../img/mob/gallery-background\ 1x.png');
+    background-image: url('../img/mob/gallery-background-1x.png');
     background-repeat: no-repeat;
     background-position: bottom;
+    width: cover;
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .gallery {
-      background-image: url('../img/mob/gallery-background\ 2x.png');
+      background-image: url('../img/mob/gallery-background-2x.png');
     }
   }
 }
@@ -143,13 +144,13 @@
     width: 100%;
     gap: 0;
     padding: 40px 393px 60px 393px;
-    background-image: url('../img/desktop/gallery-background 1x.png');
+    background-image: url('../img/desktop/gallery-background-1x.png');
     background-repeat: no-repeat;
     background-position: bottom;
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .gallery {
-      background-image: url('../img/desktop/gallery-background 2x.png');
+      background-image: url('../img/desktop/gallery-background-2x.png');
     }
   }
 
