@@ -91,6 +91,11 @@
   width: 22px;
   height: 30px;
 }
+
+.gallery-arrow-left {
+  transform: scale(-1, -1);
+}
+
 .swiper-pagination {
   position: absolute !important;
   left: 47px !important;
