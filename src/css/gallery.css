@@ -121,7 +121,7 @@
   border-radius: 0 !important;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-image: url('/img/mob/point-orange-1x-mob.png') !important; /* Активная точка */
+  background-image: url('/img/mob/point-orange-1x-mob.png') !important;
   background-size: cover !important;
   opacity: 1 !important;
 }
@@ -132,6 +132,7 @@
   .gallery {
     background-image: url('../img/mob/gallery-background-1x.png');
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: bottom;
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -140,7 +141,6 @@
     }
   }
 }
-/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 @media screen and (min-width: 1440px) {
   .gallery {
@@ -150,6 +150,7 @@
     background-image: url('../img/desktop/gallery-background-1x.png');
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: contain;
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .gallery {
