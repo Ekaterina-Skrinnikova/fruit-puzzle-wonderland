@@ -140,7 +140,7 @@
   left: -21px;
   opacity: 0px;
   z-index: 1;
-  animation-delay: 1.2s;
+  /* animation-delay: 1.2s; */
 }
 
 @media screen and (min-width: 375px) and (max-width: 1439px) {
