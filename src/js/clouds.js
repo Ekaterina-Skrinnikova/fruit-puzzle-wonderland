@@ -1,4 +1,3 @@
-
 window.addEventListener('load', function () {
   const clouds = document.querySelectorAll('.cloud');
   clouds.forEach((cloud, index) => {
