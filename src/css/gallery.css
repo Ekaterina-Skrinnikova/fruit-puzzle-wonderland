@@ -142,11 +142,11 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .gallery {
     width: 100%;
     gap: 0;
-    padding: 40px 393px 60px 393px;
+    padding: 40px 320px 60px 320px;
     background-image: url('../img/desktop/gallery-background-1x.png');
     background-repeat: no-repeat;
     background-position: bottom;
