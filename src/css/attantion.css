@@ -35,7 +35,7 @@
   line-height: calc(16.41 / 14);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .attantion-container {
     column-gap: 40px;
   }

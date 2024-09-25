@@ -107,7 +107,7 @@
   line-height: calc(18.75 / 16);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .rules {
     padding: 120px 0 160px 0;
   }

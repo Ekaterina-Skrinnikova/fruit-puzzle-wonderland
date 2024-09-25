@@ -24,7 +24,7 @@ main {
   display: none;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1279px) {
   .mobile-menu {
     display: flex;
     justify-content: space-between;
@@ -75,7 +75,7 @@ main {
   color: var(--font-color-accent);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;

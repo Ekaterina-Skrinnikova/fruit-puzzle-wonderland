@@ -10,8 +10,8 @@ document.querySelectorAll('.header-nav-link').forEach(item => {
 
     targetSection.style.paddingTop = `${headerHeight}px`;
 
-    window.matchMedia('(min-width: 1440px)').addEventListener('change', () => {
-      if (window.matchMedia('(min-width: 1440px)').matches) {
+    window.matchMedia('(min-width: 1280px)').addEventListener('change', () => {
+      if (window.matchMedia('(min-width: 1280px)').matches) {
         if (
           Array.from(document.querySelectorAll('section')).indexOf(
             targetSection
